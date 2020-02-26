@@ -1,9 +1,31 @@
-<p>sidebar works!</p>
-
-<div>
-    <a routerLink="/dashboard">dashboard!</a>
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12 side-nav-logo">
+        <a routerLink="/home">
+            <div class="align-center">
+                <fa-icon class="side-nav-icon-logo" [icon]="faSmoking"></fa-icon>
+                <span class="side-nav-title-logo">Smoke</span>
+            </div>
+        </a>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-12 p-t-5 p-b-5 divider">
+            <hr class="solid">
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-12 p-t-5 p-b-5 side-nav-button">
+        <a routerLink="/home">
+            <fa-icon class="side-nav-icons" [icon]=faTachometerAlt></fa-icon> <span class="side-nav-title">Home</span>
+        </a>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-12 p-t-5 p-b-5 side-nav-button">
+        <a routerLink="/dashboard" >
+            <fa-icon class="side-nav-icons" [icon]=faStore></fa-icon> <span class="side-nav-title">Dashboard</span>  
+        </a>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-12 p-t-5 p-b-5 divider">
+        <hr class="solid">
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-12 p-t-5 p-b-5 side-nav-button">
+        <a href="" >
+            <fa-icon class="side-nav-icons" [icon]=faCog></fa-icon> <span class="side-nav-title">Settings</span>
+        </a>
+    </div>
 </div>
-<div>
-    <a routerLink="/home">home!</a>
-</div>
-
